@@ -28,7 +28,7 @@ These instructions will get you a copy of the project up and running on your loc
 There are two main scripts in the application:
 
 - `POST-pizza.sh`: This script adds a new pizza to the menu. You can specify the item number, name, description, and prices for small, medium, and large sizes.
-- `PUT-pizza.sh`:
+- `PUT-pizza.sh`:This script updates a existing pizza on the menu. 
 - `DELETE-pizza.sh`: This script deletes a pizza from the menu. You need to specify the item number of the pizza to delete.
 
 ## Example:
