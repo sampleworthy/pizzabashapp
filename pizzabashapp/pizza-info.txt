@@ -1,0 +1,11 @@
+pizza-info
+
+ITEM = 1
+**Cheese Pizza:**
+- Indulge in our classic Cheese Pizza—perfectly baked crust topped with premium mozzarella and tangy marinara sauce. Pure indulgence in every bite!
+ITEM = 2
+**Pepperoni Pizza:**
+   Delight in our Pepperoni Pizza, a mouthwatering combination of zesty pepperoni slices layered atop a golden crust, smothered in rich marinara sauce, and sprinkled with melted mozzarella cheese. A timeless favorite that packs a punch of flavor in every bite.
+ITEM = 3
+ **Sausage Pizza:**
+-  Dive into our Sausage Pizza, featuring savory sausage crumbles nestled on a crispy crust, generously coated with our signature marinara sauce, and topped with a generous layer of gooey mozzarella cheese. A hearty and satisfying choice for pizza enthusiasts seeking a burst of savory goodness.
