@@ -1,0 +1,82 @@
+{
+	"code": "1234",
+	"display": {
+		"description": {
+			"en-US": {
+				"text": "2 Large Pizzas for $9.99 each"
+			}
+		}
+	},
+	"deal": {
+		"source": {
+			"_type": "Coupon",
+			"code": "1234"
+		},
+		"qualifiers": [
+			{
+				"orderConstraints": [
+					{
+						"_type": "ServiceMethod",
+						"isInclusive": true,
+						"serviceMethods": [
+							"Delivery"
+						],
+						"fulfillment": {
+							"display": {
+								"prompt": {
+									"en-US": {
+										"text": "Delivery Only"
+									}
+								}
+							}
+						}
+					},
+					{
+						"_type": "OrderChannel",
+						"isInclusive": true,
+						"channels": [
+							"Digital",
+							"Pulse"
+						],
+						"fulfillment": {
+							"display": {
+								"prompt": {
+									"en-US": {
+										"text": "Online and In-store"
+									}
+								}
+							}
+						}
+					}
+				],
+				"_type": "Order"
+			}
+		],
+		"components": [
+			{
+				"_type": "Offering",
+				"offeringQualifier": {
+					"_type": "Buy",
+					"quantity": 2
+				},
+				"offeringSet": {
+					"_type": "Sku",
+					"isInclusive": true,
+					"skus": [
+						"14HANDTOSS",
+						"14THIN",
+						"14PAN"
+					]
+				},
+				"offeringBenefit": {
+					"benefits": [
+						{
+							"_type": "InitialPrice",
+							"amount": 9.99
+						}
+					]
+				}
+			}
+		]
+	}
+}

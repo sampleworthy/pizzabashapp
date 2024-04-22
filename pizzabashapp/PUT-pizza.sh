@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Update an existing pizza item on the menu
 itemNumber=1
 name="Cheese Pizza"
 description="Savor our classic Cheese Pizza—perfectly baked crust topped with premium mozzarella and tangy marinara sauce. Pure indulgence in every bite!"
@@ -7,6 +8,7 @@ small_price=7.99
 medium_price=10.99
 large_price=12.99
 
+# Check if pizza.json exists
 if [ -f pizza.json ]; then
         if jq --exit-status '.[] | select(.itemNumber == '$itemNumber')' pizza.json > /dev/null; then
                 jq --argjson item "$itemNumber" \
@@ -28,6 +30,7 @@ if [ -f pizza.json ]; then
                     end
                 )
                 ' pizza.json | sponge pizza.json
+                # Check if the item was updated successfully
                 echo "Item number $itemNumber has been updated."
         else
                 echo "Item number $itemNumber does not exist."
